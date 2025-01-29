@@ -1,11 +1,24 @@
 body {
     background-color: #11181c;
     color: #aaaaaa;
-    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 pre {
-    font-size: 16;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .bsky { background-color: #0085ff; }
@@ -20,6 +33,7 @@ pre {
     height: 40px;
     overflow: hidden;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .social i {
@@ -44,4 +58,20 @@ pre {
 .social:hover i{
 	background-color: rgba(0,0,0,0.2);
     transition: all 0.2s;
+}
+
+@media (max-width: 768px) {
+    pre {
+        font-size: 14px;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .social-links {
+        margin-top: 15px;
+    }
+    
+    body {
+        padding: 10px;
+    }
 }
