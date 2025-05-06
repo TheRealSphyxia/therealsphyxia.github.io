@@ -1,0 +1,74 @@
+[
+    {
+        "tool":"ALCOM",
+        "tags":["Essential", "VCC"],
+        "Link": "https://vrc-get.anatawa12.com/en/alcom/",
+        "VPMListing": null,
+        "ShortDesc": "A fast open-source alternative of VRChat Creator Companion (VCC)",
+        "LongDesc": "An open-source alternative to VCC with many bug fixes and HUGE speed improvements along with the ability to install multiple packages and tool simultaneously and quality of life features such as \"update all packages\" buttons"
+    },
+    {
+        "tool":"BluWizard LABS - Enhanced Hierarchy System",
+        "tags":["Essential", "Unity", "UI Enhancement"],
+        "Link":"https://github.com/BluWizard10/Blu-Hierarchy",
+        "VPMListing":"https://vpm.bluwizard.net/",
+        "ShortDesc":"Modified Unity Interface",
+        "LongDesc":"A tool I use for any VRChat project world and Avatar.  It clearly shows what components are inside of a game object from the Hierarchy and allows you to quickly toggle objects on and off without the need to open up the object itself"
+    },
+    {
+        "tool":"Gesture Manager",
+        "tags":["Essential", "Unity", "Avatar Testing"],
+        "Link":"https://github.com/BlackStartx/VRC-Gesture-Manager",
+        "VPMListing":null,
+        "ShortDesc":"In Unity Avatar Testing",
+        "LongDesc":"Used to test Gestures, Toggles, Animations, etc."
+    },
+    {
+        "tool":"Haï ~ Lightbox Viewer",
+        "tags":["Essential", "Unity", "Avatar Testing"],
+        "Link":"https://docs.hai-vr.dev/docs/products/lightbox-viewer",
+        "VPMListing":"https://hai-vr.github.io/vpm-listing/",
+        "ShortDesc":"In Unity Avatar Testing",
+        "LongDesc":"A tool to check materials and avatar lighting in Unity before upload to VRChat"
+    },
+    {
+        "tool":"Modular Avatar",
+        "tags":["Essential", "Unity", "Workflow"],
+        "Link":"https://modular-avatar.nadena.dev/",
+        "VPMListing":"https://modular-avatar.nadena.dev/",
+        "ShortDesc":"Non-destructive Avatar creation",
+        "LongDesc":"Used to merge outfit, armatures, FX layers and more for a non-destructive style workflow of avatar creation"
+    },
+    {
+        "tool":"FaceEmo",
+        "tags":["Essential", "Unity", "Workflow", "Expressions"],
+        "Link":"https://suzuryg.github.io/face-emo/",
+        "VPMListing":"https://suzuryg.github.io/vpm-repos/",
+        "ShortDesc":"Non-destructive facial gesture creation tool",
+        "LongDesc":"A great tool for making gestures easy to make, and testing out blendshapes in a clean and organized interface"
+    },
+    {
+        "tool":"d4rkAvatarOptimizer",
+        "tags":["Essential", "Unity", "Optimization"],
+        "Link":"https://github.com/d4rkc0d3r/d4rkAvatarOptimizer",
+        "VPMListing":"https://d4rkc0d3r.github.io/vpm-repos/main_redirect.html",
+        "ShortDesc":"Non-destructive Avatar Optimization",
+        "LongDesc":"This tool is as simple as applying the component to the root of the avatar to merge textures, meshes, materials, and optimizing FXlayers with no effort required by the user"
+    },
+    {
+        "tool":"lilToon",
+        "tags":["Unity", "Shader"],
+        "Link":"https://github.com/lilxyzw/lilToon",
+        "VPMListing":"https://lilxyzw.github.io/lilToon/",
+        "ShortDesc":"Easy to use Toon Shading",
+        "LongDesc":"The go to for most projects, easy to use, quick to setup, with plenty of features"
+    },
+    {
+        "tool":"Poiyomi Toon Shader",
+        "tags":["Unity", "Shader"],
+        "Link":"https://github.com/poiyomi/PoiyomiToonShader",
+        "VPMListing":"https://poiyomi.github.io/vpm/",
+        "ShortDesc":"A more complicated Avatar Shader",
+        "LongDesc":"A bit more effort to get looking good, but LOADED with features.  If you have something more complicated than what lilToon allows and willing to put in the time and effort? This is the way to go"
+    }
+]

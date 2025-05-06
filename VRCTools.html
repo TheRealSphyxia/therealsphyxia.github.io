@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRChat Tools</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        body {
+            background-color: #100F0F;
+            color: #CECDC3;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table.dataTable tbody td {
+      padding: 0;
+      border: none;
+    }
+
+    .tool-card {
+      background: rgb(42, 40, 40);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .tool-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .tool-tags {
+      margin-bottom: 10px;
+    }
+
+    .tool-tags span {
+      background-color: #007bff;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 5px;
+      margin-right: 5px;
+      font-size: 0.8em;
+      display: inline-block;
+    }
+
+    .tool-desc {
+      margin-bottom: 10px;
+      color: #d1caca;
+    }
+
+    .tool-links a {
+      color: #007bff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .tool-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h1>VRChat Tools</h1>
+
+<table id="toolsTable" class="display">
+  <thead>
+    <tr><th>Tool Info</th></tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<script>
+fetch('data/VRCTools.json')
+  .then(response => response.json())
+  .then(data => {
+    const tableBody = $('#toolsTable tbody');
+
+    data.forEach(tool => {
+      const row = `
+        <tr>
+          <td>
+            <div class="tool-card">
+              <div class="tool-title">${tool.tool}</div>
+              <div class="tool-tags">
+                ${tool.tags.map(tag => `<span>${tag}</span>`).join(' ')}
+              </div>
+              <div class="tool-desc">${tool.ShortDesc}</div>
+              <div class="tool-links">
+                <a href="${tool.Link}" target="_blank">Link</a>
+                ${tool.VPMListing ? `<a href="${tool.VPMListing}" target="_blank">VPM</a>` : ''}
+              </div>
+            </div>
+          </td>
+        </tr>
+      `;
+      tableBody.append(row);
+    });
+
+    $('#toolsTable').DataTable({
+      paging: false,
+      searching: false,
+      info: false,
+      ordering: false
+    });
+  })
+  .catch(error => {
+    console.error('Error loading JSON:', error);
+    $('#toolsTable tbody').append('<tr><td>Failed to load tools.</td></tr>');
+  });
+</script>
+
+
+</body>
+</html>
