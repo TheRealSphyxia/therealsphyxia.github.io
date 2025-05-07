@@ -1,3 +1,5 @@
+.gitignore
+*.backup
 Landing.html
 Landing2.html
-*.backup
+VRCToolsTesting.html
