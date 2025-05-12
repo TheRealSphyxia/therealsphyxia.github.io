@@ -1,0 +1,162 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #100F0F;
+  color: #CECDC3;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-link {
+  color: #878580;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.home-link:hover {
+  color: #CECDC3;
+  text-decoration: underline;
+}
+
+/* Tag filter buttons */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.filter-button {
+  background-color: #1C1B1A;
+  color: #CECDC3;
+  border: 1px solid #878580;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-button.active,
+.filter-button:hover {
+  background-color: #3AA99F;
+  color: #100F0F;
+  border-color: #3AA99F;
+}
+
+/* Tool cards */
+.tool-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tool-card {
+  background-color: #1C1B1A;
+  border: 1px solid #2E2C29;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+/* .tool-card:hover {
+  transform: scale(1.01);
+} */
+
+.tool-card h2 {
+  margin-bottom: 0.5rem;
+  color: #CECDC3;
+}
+
+/* Tags */
+.tool-tags {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #100F0F;
+  background-color: #878580;
+}
+
+.tag.Essential { background-color: #D0A215; }     
+.tag.VCC { background-color: #D14D41; }           
+.tag.Unity { background-color: #4385BE; }         
+.tag.AvatarTesting { background-color: #3AA99F; }  
+.tag.Workflow { background-color: #879A39; }      
+.tag.Optimization { background-color: #879A39; }  
+.tag.Shader { background-color: #8B7EC8; }        
+.tag.Expressions { background-color: #CE5D97; }
+.tag.UIEnhancement { background-color: #878580; }
+
+/* Descriptions */
+.short-desc {
+  font-size: 0.85rem;
+  color: #878580;
+  margin-bottom: 0.3rem;
+}
+
+.long-desc {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+.tool-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.link-button {
+  display: inline-block;
+  background-color: #1C1B1A;
+  border: 1px solid #878580;
+  color: #CECDC3;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-button:hover {
+  background-color: #878580;
+  color: #100F0F;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .tool-card {
+    padding: 1rem;
+  }
+
+  .tool-links {
+    flex-direction: column;
+  }
+}
