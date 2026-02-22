@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sphyxia</title>
+  <subtitle>Hi, I'm Sphyxia and I do stuff sometimes.</subtitle>
+  <link href="https://sphyxia.com/"/>
+  <link href="https://sphyxia.com/feed.xml" rel="self"/>
+  <id>https://sphyxia.com/</id>
+  <author>
+    <name>Sphyxia</name>
+  </author>
+  <updated>2026-02-22T23:54:42.183Z</updated>
+
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="https://sphyxia.com/posts/welcome/"/>
+    <id>https://sphyxia.com/posts/welcome/</id>
+    <published>2026-02-22T00:00:00.000Z</published>
+    <updated>2026-02-22T00:00:00.000Z</updated>
+    <summary>Welcome to my website!</summary>
+    
+  </entry>
+</feed>

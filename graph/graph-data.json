@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    {
+      "id": "welcome",
+      "type": "post",
+      "title": "Welcome",
+      "slug": "welcome",
+      "connections": 0
+    }
+  ],
+  "connections": [],
+  "metadata": {
+    "totalPosts": 1,
+    "totalConnections": 0,
+    "maxNodesApplied": false,
+    "originalNodeCount": 1
+  }
+}
